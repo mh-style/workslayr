@@ -204,8 +204,14 @@
    @media (max-width: 768px) {
 
        /* Mobile */
+       .contact-banner img{
+            margin-right: 0 !important;
+       }
+       .contact-banner .text-section h4{
+            font-size: 20px !important;
+       }
        .hero-content h1 {
-           font-size: 2.5rem;
+           font-size: 1.5rem;
        }
 
        .hero-content p {
@@ -216,6 +222,24 @@
            padding: 8px 20px;
            font-size: 1rem;
        }
+
+       .contact-banner img{
+        margin-right: 0;
+       }
+
+       .design-br-top .design-red {
+        width: 115px !important;
+    }
+    .design-br-top .design-block {
+        width: 115px !important;
+        top: -70px !important;
+    }
+    .carousel-section .container{
+        padding: 80px 0;
+    }
+    .carousel-section{
+        padding: 50px 0 !important;
+    }
    }
 
    /*== contact banner ==*/
@@ -312,46 +336,6 @@
        transform: scale(1.1);
    }
 
-   /* Frame 1406 */
-   /* Frame 1406 */
-   .a {
-       position: absolute;
-       width: 309px;
-       height: 130.11px;
-       left: 0px;
-       top: 1496px;
-   }
-
-
-   /* div:after */
-   .a {
-       position: absolute;
-       width: 195.56px;
-       height: 64.06px;
-       left: 117.71px;
-       top: -23.57px;
-   }
-
-   /* Gray/900 */
-   .a {
-       background: #101828;
-       transform: matrix(0.98, -0.21, 0, 1, 0, 0);
-   }
-
-   /* div:after */
-   .a {
-       position: absolute;
-       width: 218.52px;
-       height: 64.06px;
-       left: 0px;
-       top: 65.57px;
-   }
-
-   .a {
-       /* Brand/600 */
-       background: #E42D1A;
-       transform: matrix(0.98, -0.21, 0, 1, 0, 0);
-   }
 
 
    /*== Features section ==*/
@@ -411,7 +395,9 @@
        height: 100%;
        /* overflow: hidden; */
    }
-
+   .carousel-section  .owl-carousel .owl-dots.disabled,.carousel-section  .owl-carousel .owl-nav.disabled{
+display: block;
+   }
    /* .carousel-section .owl-carousel .owl-nav button span {
        background: none;
        border: none;
@@ -532,6 +518,8 @@
        font-size: 1rem;
    }
 
+   .carousel-section .owl-dots,
+   .carousel-section .owl-nav,
    .integration .owl-dots,
    .integration .owl-nav,
    .testimonials-section .owl-dots,
@@ -540,12 +528,15 @@
        margin: 10px 0 !important;
    }
 
+   .carousel-section .owl-nav,
    .integration .owl-nav,
    .testimonials-section .owl-nav {
        right: 0;
        margin: 0;
    }
 
+   .carousel-section .owl-nav button.owl-prev,
+   .carousel-section .owl-nav button.owl-next,
    .integration .owl-nav button.owl-prev,
    .integration .owl-nav button.owl-next,
    .testimonials-section .owl-nav button.owl-prev,
@@ -562,11 +553,12 @@
        margin: 0 5px;
    }
 
+   .carousel-section .owl-nav button:hover,
    .testimonials-section .owl-nav button:hover,
    .integration .owl-nav button:hover {
        background-color: rgba(228, 45, 26, 1) !important;
    }
-
+   .carousel-section .owl-dots .owl-dot span, 
    .integration .owl-dots .owl-dot span,
    .testimonials-section .owl-dots .owl-dot span {
        background-color: #ddd;
@@ -577,6 +569,7 @@
        margin: 5px;
    }
 
+   .carousel-section .owl-dots .owl-dot.active span,
    .integration .owl-dots .owl-dot.active span,
    .testimonials-section .owl-dots .owl-dot.active span {
        background-color: #e63946;
