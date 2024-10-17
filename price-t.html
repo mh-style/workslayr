@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Plan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+    <style>
+        /* Custom CSS with unique class names */
+        .pricing-section {
+            padding: 60px 0;
+        }
+
+        .pricing-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .pricing-header h2 {
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .pricing-header p {
+            color: #6c757d;
+        }
+
+        .pricing-toggle {
+            display:block;
+            margin-bottom: 20px;
+        }
+
+        .toggle-btn {
+            background-color: #e74c3c;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .toggle-btn.active {
+            background-color: #333;
+        }
+
+        .pricing-table {
+            display: flex;
+            margin-bottom: 0;
+            width: 60%;
+            flex-wrap: nowrap;
+            justify-content: flex-end;
+            float: right;
+        }
+
+        @media(max-width:576px) {
+            .pricing-table {
+                width: 100%;
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .pricing-card {
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+            }
+            .feature-table th {
+            display: table-cell !important;
+        }
+        }
+        @media(max-width:768px){
+            
+            .pricing-table {
+                width: 100%;
+                gap: 30px;
+            }
+            .pricing-card {
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+            }.feature-table th {
+            display: table-cell !important;
+        }
+        }
+
+        .pricing-card {
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            flex: 1;
+        }
+
+        .pricing-card h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .pricing-card .price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #e74c3c;
+        }
+
+        .pricing-card p {
+            color: #6c757d;
+        }
+
+        .pricing-card .btn-started {
+            background-color: #e74c3c;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            margin-top: 15px;
+            border-radius: 25px;
+        }
+
+        .pricing-features {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .feature-table {
+            width: 100%;
+            background-color: #fff;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .feature-table tbody tr:nth-child(odd) {
+            background-color: #fdd;
+        }
+
+        .feature-table th,
+        .feature-table td {
+            padding: 15px;
+        }
+
+        .feature-table td:first-child {
+            text-align: left;
+            width: 40%;
+        }
+        .feature-table th:first-child {
+            display: block;
+            text-align: left;
+        }
+        .feature-table th {
+            color: #333;
+            font-weight: bold;
+            display: none;
+        }
+
+        .feature-table td {
+            text-align: center;
+            width: 20%;
+        }
+
+        .check-mark {
+            color: green;
+            font-size: 1.2rem;
+        }
+
+        .btn-started-all {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="pricing-section">
+        <div class="container">
+            <!-- Pricing Header -->
+            <div class="pricing-header">
+                <h2>Pricing plan</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+
+            <!-- Toggle Buttons -->
+            <div class="pricing-toggle text-center">
+                <button class="toggle-btn active">Monthly</button>
+                <button class="toggle-btn">Yearly</button>
+            </div>
+
+            <!-- Pricing Cards -->
+            <div class="pricing-table">
+                <div class="pricing-card">
+                    <h3>Basic</h3>
+                    <div class="price">$19<span>/mo</span></div>
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <button class="btn btn-started">Get started</button>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>Business</h3>
+                    <div class="price">$29<span>/mo</span></div>
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <button class="btn btn-started">Get started</button>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>Enterprise</h3>
+                    <div class="price">$49<span>/mo</span></div>
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <button class="btn btn-started">Get started</button>
+                </div>
+            </div>
+
+            <!-- Feature Comparison Table -->
+            <div class="pricing-features">
+                <table class="feature-table">
+                    <thead>
+                        <tr>
+                            <th>Feature Items</th>
+                            <th>Basic</th>
+                            <th>Business</th>
+                            <th>Enterprise</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Feature text goes here</td>
+                            <td>10</td>
+                            <td>25</td>
+                            <td>Unlimited</td>
+                        </tr>
+                        <tr>
+                            <td>Feature text goes here</td>
+                            <td><i class="fas fa-check check-mark"></i></td>
+                            <td><i class="fas fa-check check-mark"></i></td>
+                            <td><i class="fas fa-check check-mark"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Feature text goes here</td>
+                            <td><i class="fas fa-check check-mark"></i></td>
+                            <td><i class="fas fa-check check-mark"></i></td>
+                            <td><i class="fas fa-check check-mark"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Feature text goes here</td>
+                            <td><i class="fas fa-check check-mark"></i></td>
+                            <td><i class="fas fa-check check-mark"></i></td>
+                            <td><i class="fas fa-check check-mark"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Feature text goes here</td>
+                            <td><i class="fas fa-check check-mark"></i></td>
+                            <td><i class="fas fa-check check-mark"></i></td>
+                            <td><i class="fas fa-check check-mark"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Call to action buttons for plans -->
+            <div class="btn-started-all">
+                <button class="btn btn-started">Get started</button>
+                <button class="btn btn-started">Get started</button>
+                <button class="btn btn-started">Get started</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
