@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkSlayr</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/fontawesome.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <!-- Navbar Section -->
+        <div class="nav-container">
+            <nav class="navbar navbar-expand-lg navbar-custom container">
+                <!-- Brand -->
+                <a class="navbar-brand" href="#">
+                    <img src="./img/logo.png" alt="Logo">
+                </a>
+
+                <!-- Toggle button for mobile view -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <!-- Links -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./features.html">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./price.html">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./doc.html">Doc</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+
+                    <!-- Buttons -->
+                    <div class="ml-lg-auto text-center">
+                        <a class="login" href="#">Log In</a>
+                        <a href="#" class="btn btn-outline-dark">Contact Sales</a>
+                        <a href="#" class="btn btn-danger ml-lg-2">Get Started</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+
+        <section class=" ws-doc">
+            <div class="container">
+                <div class="row">
+                    <!-- Sidebar -->
+                    <div class="toggle-menu">
+                        <span class="menubtn">&#10095;</span>
+                    </div>
+                    <nav class="sidebar" id="mySidenav">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link active dropdown-toggle" href="#" data-toggle="collapse"
+                                    data-target="#overviewMenu">
+                                    <i class="fas fa-home"></i> Overview
+                                </a>
+                                <ul class="collapse show" id="overviewMenu">
+                                    <li><a class="nav-link pl-4 active" href="#">Most Popular</a></li>
+                                    <li><a class="nav-link pl-4" href="#">New</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link dropdown-toggle" href="#" data-toggle="collapse"
+                                data-target="#getStartedMenu" aria-expanded="false"><i class="fas fa-check-circle"></i> Getting Started</a>
+                                <ul class="collapse" id="getStartedMenu">
+                                    <li><a class="nav-link pl-4 active" href="#">Most Popular</a></li>
+                                    <li><a class="nav-link pl-4" href="#">New</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-user"></i> User Guides</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-info-circle"></i> Introduction</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-cogs"></i> Managements</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <!-- Main Content -->
+                    <div class="content" id="content">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item"><a href="#">Overview</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Most Popular</li>
+                            </ol>
+                        </nav>
+
+                        <h2>Overview</h2>
+                        <p>
+                            Intro text i leo risus, porta ac consectetur ac, vestibulum at eros. Duis mollis, est non
+                            commodo
+                            luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+                        </p>
+
+                        <!-- Cards div -->
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><i class="fa-solid fa-cube"></i> Quick Start</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                                        <a href="#" class="card-link">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><i class="fa-solid fa-cube"></i> Tutorials</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                                        <a href="#" class="card-link">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><i class="fa-solid fa-cube"></i> FAQ</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                                        <a href="#" class="card-link">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ws-doc-title-sub">
+                            <h3>Explore Most Popular</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit vitae quos,
+                                voluptates
+                                veniam, sunt, odio eos maiores porro voluptate ducimus veritatis et dolorum nulla
+                                recusandae.
+                            </p>
+                        </div>
+                        <div class="row ws-doc-explore">
+                            <div class="col-md-4">
+                                <h5>Lorem ipsum <i class="fa-solid fa-arrow-right"></i></h5>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>Lorem ipsum <i class="fa-solid fa-arrow-right"></i></h5>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>Lorem ipsum <i class="fa-solid fa-arrow-right"></i></h5>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>Lorem ipsum <i class="fa-solid fa-arrow-right"></i></h5>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <section class="contact-banner-body contact-banner-bg-black ">
+            <div class="container">
+                <div class="contact-banner">
+                    <!-- Left image (use a placeholder or your own image URL) -->
+                    <img src="./img/2.png" alt="Contact Illustration">
+
+                    <!-- Text section -->
+                    <div class="text-section">
+                        <h4>Get in touch today to learn how our app can streamline your team's work.</h4>
+                    </div>
+
+                    <!-- Button section -->
+                    <div>
+                        <button class="btn btn-light">Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container container">
+            <div class="row">
+                <!-- Footer Left: Logo and Contact Info -->
+                <div class="footer-left col-md-8">
+                    <h3><img src="./img/logo-white.png" alt="WorkSlayr Logo" width="150"></h3>
+                    <address>
+                        <strong>Address:</strong><br>
+                        Level 1, 12 Sample St,
+                        Sydney NSW 2000
+                    </address>
+                    <p><strong>Contact:</strong><br>
+                        1800 123 4567<br>
+                        <a href="mailto:info@relume.io">info@relume.io</a>
+                    </p>
+
+                    <!-- Social Media Icons -->
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Footer Right: Navigation Links -->
+                <div class="footer-right col-md-4 d-flex">
+                    <ul>
+                        <li><a href="#">Get Started</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Login</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            © 2024 Workslayr. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
