@@ -156,6 +156,7 @@
         max-width: 80%;
         margin: 0 auto;
     }
+
 }
 
 /*=== Hero section ==*/
@@ -268,7 +269,7 @@
         width: 115px !important;
     }
 
-    .design-br-top .design-block {
+    .design-br-top .design-black {
         width: 115px !important;
         top: -70px !important;
     }
@@ -425,7 +426,7 @@ section.contact-banner-body {
     left: -1%;
 }
 
-.design-br-top .design-block {
+.design-br-top .design-black {
     left: 8%;
     width: 145px;
     transform: skew(-30deg, 9deg) rotateZ(150deg);
@@ -630,7 +631,7 @@ section.contact-banner-body {
 
 /*----------------*/
 
-span.design-block {
+span.design-black {
     position: absolute;
     display: inline-block;
     overflow: hidden;
@@ -663,7 +664,7 @@ span.design-red {
 }
 
 .design-br-bottom .design-red,
-.design-br-bottom .design-block {
+.design-br-bottom .design-black {
     left: -1%;
 }
 
@@ -671,7 +672,7 @@ span.design-red {
     bottom: 0;
 }
 
-.design-br-bottom .design-block {
+.design-br-bottom .design-black {
     top: 0;
 }
 
@@ -1091,7 +1092,7 @@ justify-content: space-between;
         font-size: 16px;
     }
 
-    .design-br-top .design-block {
+    .design-br-top .design-black {
         left: 18% !important;
     }
 
@@ -1222,7 +1223,7 @@ justify-content: space-between;
     width: 100%;
 }
 
-.design-br-fet-top .design-block {
+.design-br-fet-top .design-black {
     position: absolute;
     display: inline-block;
     overflow: hidden;
@@ -1253,7 +1254,7 @@ justify-content: space-between;
     top: 35%;
 }
 
-.design-br-fet-bottom .design-block {
+.design-br-fet-bottom .design-black {
     position: relative;
     display: inline-block;
     z-index: -4;
@@ -1441,8 +1442,28 @@ justify-content: space-between;
     .integration .item h5 {
         font-size: 16px;
     }
+    .integration .design-br-top .design-black {
+        top: -127px !important;
+        left: 115px;
+    }
 }
-
+@media (max-width: 576px) {
+    .integration .design-br-top{
+        top: 93px !important;
+    }
+    .integration .design-br-top .design-black {
+        top: -117px !important;
+        left: 95px !important;
+        transform: skew(-30deg, 9deg) rotateZ(148deg) !important;
+    }
+    .integration .container{
+        padding: 140px 0 ;
+    }
+    .design-br-top .design-red {
+        transform: skew(-30deg, 9deg) rotateZ(148deg) !important;
+        top: -38px !important;
+    }
+}
 /*******************/
 .features-section .row .col {
     padding: 10px;
@@ -1472,12 +1493,17 @@ justify-content: space-between;
     margin: 101px 0;
 }
 
+.integration .design-br-top {
+    position: absolute;
+    top: 101px;
+}
 .integration .design-br-top .design-red {
     top: -40px;
 }
 
-.integration .design-br-top .design-block {
+.integration .design-br-top .design-black {
     top: -127px;
+    left: 127px;
 }
 
 /****************** Doc ********************/
