@@ -1542,6 +1542,7 @@ justify-content: space-between;
     list-style: none;
 }
 
+.ws-doc .sidebar .nav-link:active,
 .ws-doc .sidebar .nav-link:hover,
 .ws-doc .sidebar .nav-link.active {
     background-color: rgba(228, 45, 26, 1);
@@ -1565,6 +1566,9 @@ justify-content: space-between;
 }
 
 /* Main Content Styles */
+.ws-doc {
+    margin-bottom: 10%;
+}
 .ws-doc .content {
     padding: 30px 20px;
     background-color: #fff;
@@ -1583,12 +1587,15 @@ justify-content: space-between;
 
 .ws-doc .breadcrumb-item a {
     color: #6c757d;
+    text-decoration: none;
 }
 
 .ws-doc .breadcrumb-item.active {
     color: #333;
 }
-
+.breadcrumb-item+.breadcrumb-item::before{
+    content: "\276F";
+}
 /* Card Section */
 .ws-doc .card {
     border: 1px solid #e3e3e3;

@@ -77,12 +77,12 @@
                     <nav class="sidebar" id="mySidenav">
                         <ul class="nav flex-column">
                             <li class="nav-item">
-                                <a class="nav-link active dropdown-toggle" href="#" data-toggle="collapse"
+                                <a class="nav-link dropdown-toggle" href="#" data-toggle="collapse"
                                     data-target="#overviewMenu">
                                     <i class="fas fa-home"></i> Overview
                                 </a>
-                                <ul class="collapse show" id="overviewMenu">
-                                    <li><a class="nav-link pl-4 active" href="./doc.html">Most Popular</a></li>
+                                <ul class="collapse" id="overviewMenu">
+                                    <li><a class="nav-link pl-4" href="./doc.html">Most Popular</a></li>
                                     <li><a class="nav-link pl-4" href="#">New</a></li>
                                 </ul>
                             </li>
@@ -90,7 +90,7 @@
                                 <a class="nav-link dropdown-toggle" href="#" data-toggle="collapse"
                                 data-target="#getStartedMenu" aria-expanded="false"><i class="fas fa-check-circle"></i> Getting Started</a>
                                 <ul class="collapse" id="getStartedMenu">
-                                    <li><a class="nav-link pl-4 active" href="#">Most Popular</a></li>
+                                    <li><a class="nav-link pl-4" href="#">Most Popular</a></li>
                                     <li><a class="nav-link pl-4" href="#">New</a></li>
                                 </ul>
                             </li>
@@ -101,10 +101,10 @@
                                 <a class="nav-link" href="#"><i class="fas fa-info-circle"></i> Introduction</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link dropdown-toggle" href="#" data-toggle="collapse"
+                                <a class="nav-link active dropdown-toggle" href="#" data-toggle="collapse"
                                 data-target="#managementMenu" aria-expanded="false"><i class="fas fa-cogs"></i> Managements</a>
-                                <ul class="collapse" id="managementMenu">
-                                    <li><a class="nav-link pl-4" href="./doc-um.html">User Management</a></li>
+                                <ul class="collapse show" id="managementMenu">
+                                    <li><a class="nav-link pl-4 active" href="./doc-um.html">User Management</a></li>
                                     <li><a class="nav-link pl-4" href="#">Project and Task</a></li>
                                     <li><a class="nav-link pl-4" href="#">Financial Management</a></li>
                                     <li><a class="nav-link pl-4" href="#">HR and Employee</a></li>
@@ -125,82 +125,42 @@
 
                     <!-- Main Content -->
                     <div class="content" id="content">
-                        <nav aria-label="breadcrumb">
+                        <nav style="--bs-breadcrumb-divider: '>';"  aria-label="breadcrumb">
                             <ol class="breadcrumb mb-0">
                                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item"><a href="#">Overview</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Most Popular</li>
+                                <li class="breadcrumb-item"><a href="#">Managements</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">User Management</li>
                             </ol>
                         </nav>
-
                         <blockquote class="blockquote">
                             <small class="text-body-secondary">Updated: April 3, 2023</small>
                         </blockquote>
-                        <h2>Overview</h2>
+                        <h2>User Management</h2>
                         <p>
-                            Intro text i leo risus, porta ac consectetur ac, vestibulum at eros. Duis mollis, est non
-                            commodo
-                            luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+                            User management is an organizational function that enables users to access and control digital assets, such as applications, devices, networks, and cloud services. Organizations are now exploring even more advanced solutions. Modern user management services provide end-to-end management of user accounts, including user registration, login and authentication, single sign-on (SSO), and permissions management.
                         </p>
 
-                        <!-- Cards div -->
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h5 class="card-title"><i class="fa-solid fa-cube"></i> Quick Start</h5>
-                                        <p class="card-text">Lorem ipsum dolor sit amet.</p>
-                                        <a href="#" class="card-link">Learn more</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h5 class="card-title"><i class="fa-solid fa-cube"></i> Tutorials</h5>
-                                        <p class="card-text">Lorem ipsum dolor sit amet.</p>
-                                        <a href="#" class="card-link">Learn more</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h5 class="card-title"><i class="fa-solid fa-cube"></i> FAQ</h5>
-                                        <p class="card-text">Lorem ipsum dolor sit amet.</p>
-                                        <a href="#" class="card-link">Learn more</a>
-                                    </div>
-                                </div>
-                            </div>
+                        <h4>The Need for Modern User Management</h4>
+                        <p>
+                            User management allows administrators to manage resources and organize users according to their needs and roles while maintaining the security of IT systems. Administrators need powerful user management capabilities that can allow them to group users and define flexible access policies.
+                            For end-users, many parts of user management are invisible. When users are exposed to user management—for example, when they use a login box to access an application—they expect the interaction to be simple and seamless. Login is a frequently-performed, critical operation, meaning that any delay or malfunction annoys users and hurts productivity.
+                            Many organizations recognize that on-premise IdP solutions are insufficient for the modern IT environment. Users increasingly rely on cloud services and access corporate systems remotely, often via personal devices, and traditional IdP cannot address these use cases. 
+                            Organizations must find a way to manage secure access for a distributed environment. At the same time, users demand the same simplicity of popular services like Google and Facebook in their work environment. These challenges are making user management more important and more complex than ever before.
+                        </p>
+                        <h4>Increased Complexity</h4>
+                        <p>
+                            Traditionally, when organizations developed software, they would develop the authentication and user management components in-house. However, in today’s technology ecosystem this is no longer feasible. Modern authentication and authorization systems are very complex, involving:
+                            <ul>
+                                <li>The use of multiple identity providers, both internal and external.</li>
+                                <li>The requirement for single sign on (SSO).</li>
+                                <li>Delegation of authentication and authorization to other applications, as in the case of social login.</li>
+                                <li>Standardized methods for authorization including ACL, RBAC, and ABAC.</li>
+                            </ul>
+                            Multi-tenancy, as in the case of SaaS applications that must manage groups of users belonging to different organizations.
+                            To implement these complex requirements, and ensure user management is robust and secure, organizations must use third-party tools. This gave rise to an entire market of cloud services and applications that can help organizations implement user management and access control.
+                        </p>
+                    
                         </div>
-
-                        <div class="ws-doc-title-sub">
-                            <h3>Explore Most Popular</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit vitae quos,
-                                voluptates
-                                veniam, sunt, odio eos maiores porro voluptate ducimus veritatis et dolorum nulla
-                                recusandae.
-                            </p>
-                        </div>
-                        <div class="row ws-doc-explore">
-                            <div class="col-md-4">
-                                <h5>Lorem ipsum <i class="fa-solid fa-arrow-right"></i></h5>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                            </div>
-                            <div class="col-md-4">
-                                <h5>Lorem ipsum <i class="fa-solid fa-arrow-right"></i></h5>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                            </div>
-                            <div class="col-md-4">
-                                <h5>Lorem ipsum <i class="fa-solid fa-arrow-right"></i></h5>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                            </div>
-                            <div class="col-md-4">
-                                <h5>Lorem ipsum <i class="fa-solid fa-arrow-right"></i></h5>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
